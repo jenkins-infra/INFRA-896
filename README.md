@@ -2,3 +2,5 @@ Script used to fudge access log to clean up the mess of [INFRA-896](https://issu
 
 Put original log files in the 'input' directory, then create empty 'out' directory and run `./run.sh`.
 You get fudged files in the 'out' directory in the end.
+
+The actual run of this is in `usage.jenkins.io:/srv/usage/INFRA-896`
