@@ -203,7 +203,9 @@ drwxr-xr-x 5 root root     4096 Aug 18 01:27 ..
 
 ```
 ## Verification
+```
 root@usage:/srv/usage/INFRA-896# gunzip -c input/*.gz | wc -l
 3853958
 root@usage:/srv/usage/INFRA-896# gunzip -c out/*.gz | wc -l
 3853958
+```
