@@ -18,7 +18,7 @@ System.in.eachLine { l ->
             def cur = of.format(dt) // yyyyMMdd form of the current date
             if (cur!=prev) {
                 o?.close();
-                o = new PrintWriter(new OutputStreamWriter(new GZIPOutputStream(new FileOutputStream("access.log."+cur+"000000.fudged.gz"))))
+                o = new PrintWriter(new OutputStreamWriter(new GZIPOutputStream(new FileOutputStream(args[0]+cur+"000000.fudged.gz"))))
                     prev = cur
             }
         o.println(l);
